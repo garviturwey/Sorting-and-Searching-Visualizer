@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <div class="heading">
+      Sorting and Searching Visualizer
+    </div>
+    <div class="operations">
+      Array Size <input type="range" min="10" max="150" value="20" class="slider" id="myRange">
+      <br>
+      <input class="myButton" type="button" value="Bubble sort" onclick="bsortstart();">
+      <input class="myButton" type="button" value="Quick sort" onclick="qsortstart();">
+      <input class="myButton" type="button" value="Merge sort" onclick="msortstart();">
+      <input class="myButton" type="button" value="Heap sort" onclick="hsortstart();">
+      <input class="myButton" type="button" value="Selectin sort" onclick="ssortstart();">
+      <input class="myButton" type="button" value="Insertion sort" onclick="isortstart();">
+      <input class="myButton" type="button" value="Count sort" onclick="csortstart();">
+      <br>
+      Enter value your want search (0-500) <input type="text" placeholder="from 0 to 500" class="css-input" id="input">
+      <br>
+      <input class="myButton" type="button" value="Linear search" onclick="linearstart();">
+      <input class="myButton" type="button" value="Binary search" onclick="Binarystart();">
+      <input class="myButton" type="button" value="Jump search" onclick="Jumpstart();">
+      <input class="myButton" type="button" value="Interpolation search" onclick="istart();">
+      <input class="myButton" type="button" value="Exponential search" onclick="estart();">
+    </div>
+    <div id="can">
+
+    </div>
+    <div class="lower">
+      <p class="output" id="oo">Welcome to this Visualizer</p>
+
+    </div>
+    <div class="intro">
+      Made by - Garvit Urwey
+      <br>
+      MANIT CSE (2018-22)
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
